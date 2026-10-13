@@ -34,6 +34,8 @@ public class TorpedoStore {
     
 
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
+     //Raise an exception if there are no torpedos or more are to be fired than available.
+
       throw new IllegalArgumentException("numberOfTorpedos");
     }
 
